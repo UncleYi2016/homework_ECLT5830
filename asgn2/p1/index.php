@@ -10,35 +10,33 @@
       "Chrome", "Edge", "Firefox", "Safari", "Other"
   */
 
-  function get_browser(){  
-    if(false!==strpos($_SERVER['HTTP_USER_AGENT'],'MSIE 9.0')){  
-        return 'Internet Explorer 9.0';  
-    }  
-    if(false!==strpos($_SERVER['HTTP_USER_AGENT'],'MSIE 8.0')){  
-        return 'Internet Explorer 8.0';  
-    }  
-    if(false!==strpos($_SERVER['HTTP_USER_AGENT'],'MSIE 7.0')){  
-        return 'Internet Explorer 7.0';  
-    }  
-    if(false!==strpos($_SERVER['HTTP_USER_AGENT'],'MSIE 6.0')){  
-        return 'Internet Explorer 6.0';  
-    }  
-    if(false!==strpos($_SERVER['HTTP_USER_AGENT'],'Firefox')){  
-        return 'Firefox';  
-    }  
-    if(false!==strpos($_SERVER['HTTP_USER_AGENT'],'Chrome')){  
-        return 'Chrome';  
-    }  
-    if(false!==strpos($_SERVER['HTTP_USER_AGENT'],'Safari')){  
-        return 'Safari';  
-    }  
-    if(false!==strpos($_SERVER['HTTP_USER_AGENT'],'Opera')){  
-        return 'Opera';  
-    }  
-    return 'Other';
-  }
+function get_browser_type(){
+  if(false!==strpos($_SERVER['HTTP_USER_AGENT'],'MSIE 9.0')){  
+    return 'Internet Explorer 9.0';  
+  }  
+  if(false!==strpos($_SERVER['HTTP_USER_AGENT'],'MSIE 8.0')){  
+      return 'Internet Explorer 8.0';  
+  }  
+  if(false!==strpos($_SERVER['HTTP_USER_AGENT'],'MSIE 7.0')){  
+      return 'Internet Explorer 7.0';  
+  }  
+  if(false!==strpos($_SERVER['HTTP_USER_AGENT'],'MSIE 6.0')){  
+      return 'Internet Explorer 6.0';  
+  }  
+  if(false!==strpos($_SERVER['HTTP_USER_AGENT'],'Firefox')){  
+      return 'Firefox';  
+  }  
+  if(false!==strpos($_SERVER['HTTP_USER_AGENT'],'Chrome')){  
+      return 'Chrome';  
+  }  
+  if(false!==strpos($_SERVER['HTTP_USER_AGENT'],'Safari')){  
+      return 'Safari';  
+  }  
+  return 'Other';
+} 
+  
 
-function get_os(){
+function get_os_type(){
   if(false!==strpos($_SERVER['HTTP_USER_AGENT'],'Windows')){  
     return 'Windows';  
   }  
@@ -51,6 +49,6 @@ function get_os(){
   return 'Other';
 }
 
-echo 'Your browser is ' + get_browser() + '<br>';
-echo 'Your OS is ' + get_os();
+echo 'Your browser is ' + get_browser_type() + '<br>';
+echo 'Your OS is ' + get_os_type();
 ?>
