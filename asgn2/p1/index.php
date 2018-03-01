@@ -63,7 +63,6 @@ function getOS(){
       return 'Opera';  
   } 
 }
-}
 
 echo my_get_browser();
 echo $_SERVER['HTTP_USER_AGENT'];
