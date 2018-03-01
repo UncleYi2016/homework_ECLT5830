@@ -19,7 +19,7 @@
 $types = array('', 'CB', 'ODB', 'UNO');
 $d = $_GET['d'];
 $type = $_GET['type'];
-$url= 'img/' . $d . $type . '.jpg';
+$url= 'img/' . $d . $types[$type] . '.jpg';
 
 
 ?>
