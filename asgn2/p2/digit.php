@@ -16,6 +16,12 @@
   You need to set a header field and use readfile() to output the
   content of a file. Here, output means sending the data to the response body.
 */
+$types = array('', 'CB', 'ODB', 'UNO');
+$d = $_GET['d'];
+$type = $_GET['type'];
+$url= 'img/' + $d + $type + '.jpg'
 
 
 ?>
+
+<img src=<?=$url?> />
