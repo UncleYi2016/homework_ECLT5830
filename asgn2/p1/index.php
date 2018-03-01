@@ -48,7 +48,7 @@ function get_os(){
   if(false!==strpos($_SERVER['HTTP_USER_AGENT'],'Linux')){  
       return 'Linux';  
   }  
-  return 'Other'
+  return 'Other';
 }
 
 echo 'Your browser is ' + get_browser() + '<br>';
