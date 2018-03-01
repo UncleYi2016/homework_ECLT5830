@@ -10,7 +10,7 @@
       "Chrome", "Edge", "Firefox", "Safari", "Other"
   */
 
-  function my_get_browser(){  
+  function get_browser(){  
     if(false!==strpos($_SERVER['HTTP_USER_AGENT'],'MSIE 9.0')){  
         return 'Internet Explorer 9.0';  
     }  
@@ -35,35 +35,22 @@
     if(false!==strpos($_SERVER['HTTP_USER_AGENT'],'Opera')){  
         return 'Opera';  
     }  
+    return 'Other'
 } 
 
-function getOS(){
+function get_os(){
   if(false!==strpos($_SERVER['HTTP_USER_AGENT'],'Windows')){  
     return 'Windows';  
   }  
-  if(false!==strpos($_SERVER['HTTP_USER_AGENT'],'MSIE 8.0')){  
-      return 'Internet Explorer 8.0';  
+  if(false!==strpos($_SERVER['HTTP_USER_AGENT'],'Macintosh')){  
+      return 'Macintosh';  
   }  
-  if(false!==strpos($_SERVER['HTTP_USER_AGENT'],'MSIE 7.0')){  
-      return 'Internet Explorer 7.0';  
+  if(false!==strpos($_SERVER['HTTP_USER_AGENT'],'Linux')){  
+      return 'Linux';  
   }  
-  if(false!==strpos($_SERVER['HTTP_USER_AGENT'],'MSIE 6.0')){  
-      return 'Internet Explorer 6.0';  
-  }  
-  if(false!==strpos($_SERVER['HTTP_USER_AGENT'],'Firefox')){  
-      return 'Firefox';  
-  }  
-  if(false!==strpos($_SERVER['HTTP_USER_AGENT'],'Chrome')){  
-      return 'Chrome';  
-  }  
-  if(false!==strpos($_SERVER['HTTP_USER_AGENT'],'Safari')){  
-      return 'Safari';  
-  }  
-  if(false!==strpos($_SERVER['HTTP_USER_AGENT'],'Opera')){  
-      return 'Opera';  
-  } 
+  return 'Other'
 }
 
-echo my_get_browser();
-echo $_SERVER['HTTP_USER_AGENT'];
+echo 'Your browser is ' + get_browser() + '<br>';
+echo 'Your OS is ' + get_os();
 ?>
