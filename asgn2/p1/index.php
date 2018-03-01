@@ -35,8 +35,8 @@
     if(false!==strpos($_SERVER['HTTP_USER_AGENT'],'Opera')){  
         return 'Opera';  
     }  
-    return 'Other'
-} 
+    return 'Other';
+  }
 
 function get_os(){
   if(false!==strpos($_SERVER['HTTP_USER_AGENT'],'Windows')){  
