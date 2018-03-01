@@ -49,6 +49,9 @@ function get_os_type(){
   return 'Other';
 }
 
-echo 'Your browser is ' + get_browser_type() + '<br>';
-echo 'Your OS is ' + get_os_type();
+echo 'Your browser is ';
+echo get_browser_type();
+echo '<br>';
+echo 'Your OS is ';
+echo get_os_type();
 ?>
