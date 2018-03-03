@@ -12,6 +12,8 @@
 <?php include("menu.php") ?>
 
 <?php
+  $id = $_GET["id"];
+  $item = $mockDb[$id];
   /*
     TODO:
     1. Retrieve the id of the item in the request
@@ -23,9 +25,20 @@
       d. A form that allows the user to specify and submit the quantity of the
          current item to be added to the shopping cart.
   */
-  var_dump($mockDb[2]);
 ?>
 
+<br>
+Title: <?=$item["title"]?>
+<br>
+Origin: <?=$item["origin"]?>
+<br>
+Price: <?=$item["price"]?>
+<br>
+
+<form action="add_item.php" method="GET">
+<input type="text" name="quantity" value="1"/>
+<input type="submit">Submit</input>
+</form>
 
 </body>
 </html>
