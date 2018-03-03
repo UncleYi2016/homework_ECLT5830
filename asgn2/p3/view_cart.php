@@ -11,11 +11,21 @@
 <body>
 
 <?php include("menu.php") ?>
-
+<table>
+<th>Item</th>
+<th>Quantity</th>
 <?php
+  if(isset($_SESSION["cart"])){
+    foreach ($_SESSION["cart"] as $id => $quantity){
+?>
+  <td><?=$mockDb[$id]["title"]?></td>
+  <td><?=$quantity?></td>
+<?php
+  }
+}
   // TODO: Show the content of the shopping cart (in any format) here.
 ?>
-
+</table>
 <?PHP
   // TODO: Add a link here, when clicked, will send a request to the server
   //       to clear all the content in the shopping cart.

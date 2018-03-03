@@ -23,6 +23,21 @@
 <?php include("menu.php") ?>
 
 <?php
+if(!isset($_SESSION['cart'])){
+  $_SESSION['cart'] = array();
+}
+$id = $_GET["id"];
+$quantity = $_GET["quantity"];
+if(!is_numeric($quantitiy)){
+  echo "Please input number of quantity";
+}else{
+  if(isset($mockDb[$id])){
+    $_SESSION['cart'][$id] = $quantity;
+  }
+  echo "Item added to cart";
+}
+
+
 /*
   TODO: Output a message to indicate if an item has been successfully
         added to the cart.
