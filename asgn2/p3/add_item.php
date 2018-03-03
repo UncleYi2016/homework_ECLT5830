@@ -13,6 +13,7 @@
            Update the quanity of the item in the shopping cart
 
   */
+  session_start();
 ?>
 <!DOCTYPE html>
 <html>
@@ -23,6 +24,7 @@
 <?php include("menu.php") ?>
 
 <?php
+
 if(!isset($_SESSION['cart'])){
   $_SESSION['cart'] = array();
 }
