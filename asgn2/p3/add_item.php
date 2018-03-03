@@ -24,20 +24,28 @@
 <?php include("menu.php") ?>
 
 <?php
-
-if(!isset($_SESSION['cart'])){
-  $_SESSION['cart'] = array();
-}
-$id = $_GET["id"];
-$quantity = $_GET["quantity"];
-if(!is_numeric($quantity)){
-  echo "Please input number of quantity";
-}else{
-  if(isset($mockDb[$id])){
-    $_SESSION['cart'][$id] = $quantity;
+if(isset($_GET["type"]) && $_GET["type"]=="clear"){
+  if(session_destroy){
+    echo "Session clean up!";
+  }else{
+    echo "Session clean failed!";
   }
-  echo "Item added to cart";
+}else{
+  if(!isset($_SESSION['cart'])){
+    $_SESSION['cart'] = array();
+  }
+  $id = $_GET["id"];
+  $quantity = $_GET["quantity"];
+  if(!is_numeric($quantity)){
+    echo "Please input number of quantity";
+  }else{
+    if(isset($mockDb[$id])){
+      $_SESSION['cart'][$id] = $quantity;
+    }
+    echo "Item added to cart";
+  }
 }
+  
 
 
 /*

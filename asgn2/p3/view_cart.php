@@ -31,11 +31,13 @@ var_dump($_SESSION["cart"]);
   // TODO: Show the content of the shopping cart (in any format) here.
 ?>
 </table>
-<?PHP
+<?php
   // TODO: Add a link here, when clicked, will send a request to the server
   //       to clear all the content in the shopping cart.
   //      You have to decide how to implement this feature.
+
 ?>
+  <a href="./add_item.php?type=clear">Clear up</a>
 
 </body>
 </html>
