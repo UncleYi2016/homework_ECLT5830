@@ -21,8 +21,10 @@ var_dump($_SESSION["cart"]);
   if(isset($_SESSION["cart"])){
     foreach ($_SESSION["cart"] as $id => $quantity){
 ?>
+<tr>
   <td><?=$mockDb[$id]["title"]?></td>
   <td><?=$quantity?></td>
+</tr>
 <?php
   }
 }
