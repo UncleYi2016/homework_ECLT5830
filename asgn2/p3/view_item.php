@@ -36,8 +36,9 @@ Price: <?=$item["price"]?>
 <br>
 
 <form action="add_item.php" method="GET">
-<input type="text" name="quantity" value="1"/>
-<input type="submit">Submit</input>
+<input type="hidden" name="id" value=<?=$id?> />
+<input type="text" name="quantity" value="1" />
+<input type="submit" />
 </form>
 
 </body>
