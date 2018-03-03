@@ -23,7 +23,7 @@
       d. A form that allows the user to specify and submit the quantity of the
          current item to be added to the shopping cart.
   */
-  var_dump($mockDb);
+  var_dump($mockDb[2]);
 ?>
 
 
