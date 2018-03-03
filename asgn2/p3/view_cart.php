@@ -11,6 +11,7 @@
 <body>
 
 <?php include("menu.php") ?>
+var_dump($_SESSION['cart']);
 <table>
 <th>Item</th>
 <th>Quantity</th>
