@@ -25,7 +25,7 @@
 
 <?php
 if(isset($_GET["type"]) && $_GET["type"]=="clear"){
-  if(session_destroy){
+  if(session_destroy()){
     echo "Session clean up!";
   }else{
     echo "Session clean failed!";
