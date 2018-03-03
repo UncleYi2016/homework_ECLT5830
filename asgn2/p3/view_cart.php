@@ -31,6 +31,7 @@
   }
   ?>
       </table>
+      <a href="./add_item.php?type=clear">Clear up</a>
 <?php
   }else{
 ?>
@@ -46,7 +47,6 @@
   //      You have to decide how to implement this feature.
 
 ?>
-  <a href="./add_item.php?type=clear">Clear up</a>
 
 </body>
 </html>
