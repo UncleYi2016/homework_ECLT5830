@@ -17,7 +17,7 @@
 <?php
   if(isset($_SESSION["cart"])){
     ?>
-    <table>
+    <table border=1>
     <th>Item</th>
     <th>Quantity</th>
     <?php
