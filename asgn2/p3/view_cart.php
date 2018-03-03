@@ -11,11 +11,12 @@
 <body>
 
 <?php include("menu.php") ?>
-var_dump($_SESSION['cart']);
+
 <table>
 <th>Item</th>
 <th>Quantity</th>
 <?php
+var_dump($_SESSION["cart"]);
   if(isset($_SESSION["cart"])){
     foreach ($_SESSION["cart"] as $id => $quantity){
 ?>
