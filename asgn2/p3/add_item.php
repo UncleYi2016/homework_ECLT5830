@@ -3,6 +3,7 @@
 // Do not remove this line.
   include('lib/items.php');
 
+
   /*
     TODO:
     1. Retrieve item id and quantity of the item from the request.
@@ -13,6 +14,7 @@
            Update the quanity of the item in the shopping cart
 
   */
+  session_set_cookie_params(300);
   session_start();
 ?>
 <!DOCTYPE html>

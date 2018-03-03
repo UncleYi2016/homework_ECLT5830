@@ -2,6 +2,7 @@
 // Include the data to be used in this assignment
 // Do not remove this line.
   include('lib/items.php');
+  session_set_cookie_params(300);
   session_start();
 ?>
 

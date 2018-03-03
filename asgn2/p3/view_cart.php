@@ -18,12 +18,14 @@
   if(isset($_SESSION["cart"])){
     ?>
     <table border=1>
+    <th>ID</th>
     <th>Item</th>
     <th>Quantity</th>
     <?php
     foreach ($_SESSION["cart"] as $id => $quantity){
 ?>
       <tr>
+        <td><?=$id?></td>
         <td><?=$mockDb[$id]["title"]?></td>
         <td><?=$quantity?></td>
       </tr>
