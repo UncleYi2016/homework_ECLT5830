@@ -28,7 +28,7 @@ if(!isset($_SESSION['cart'])){
 }
 $id = $_GET["id"];
 $quantity = $_GET["quantity"];
-if(!is_numeric($quantitiy)){
+if(!is_numeric($quantity)){
   echo "Please input number of quantity";
 }else{
   if(isset($mockDb[$id])){
