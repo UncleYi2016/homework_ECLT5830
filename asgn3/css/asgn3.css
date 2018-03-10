@@ -2,5 +2,5 @@
   Place your CSS here
 */
 @media screen and (min-width: 640px){
-  #user_name{visibility: hidden}
+  #user_id{visibility: hidden}
 }
