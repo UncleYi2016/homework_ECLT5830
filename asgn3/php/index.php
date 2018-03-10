@@ -14,7 +14,7 @@
         }
       }
       ?>
-      <img src="../img/<?=$row["user_id"]?>" />
+      <img src="../img/<?=$row["user_id"]?>.jpg" /> <br>
       <?php
     }
   }
