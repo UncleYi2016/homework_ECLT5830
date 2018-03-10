@@ -13,7 +13,7 @@
     while($row = $result->fetch_assoc()){
       foreach($row as $name => $element){
         if($name != "pass"){
-          echo "<li>" . $element . "</li>";
+          echo "<li class='user' id='". $name ."'>" . $element . "</li>";
         }
       }
       ?>
