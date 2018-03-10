@@ -12,16 +12,16 @@
   $result = $db->query($sql);
   if($result->num_rows > 0){
     ?>
-    <ul>
+    <ul class="user" >
     <?php
     while($row = $result->fetch_assoc()){
       foreach($row as $name => $element){
         if($name != "pass"){
-          echo "<li class='user' id='". $name ."'>" . $element . "</li>";
+          echo "<li id='". $name ."'>" . $element . "</li>";
         }
       }
       ?>
-      <li class="user" id="image"><img src="../img/<?=$row["user_id"]?>.jpg" /></li>
+      <li id="image"><img src="../img/<?=$row["user_id"]?>.jpg" /></li>
       <?php
     }
     ?>
