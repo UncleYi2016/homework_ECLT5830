@@ -1,3 +1,7 @@
+<html>
+<style type="text/css">
+  @import url("../css/asgn3.css");
+</style>
 <?php
   require_once('lib/init.php');
 
@@ -25,3 +29,5 @@
     <?php
   }
   include('view/index.php');
+  ?>
+  </html>
