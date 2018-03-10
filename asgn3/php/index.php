@@ -7,15 +7,21 @@
   $sql = "SELECT * FROM `users`";
   $result = $db->query($sql);
   if($result->num_rows > 0){
+    ?>
+    <ul>
+    <?php
     while($row = $result->fetch_assoc()){
       foreach($row as $name => $element){
         if($name != "pass"){
-          echo $element . "<br>";
+          echo "<li>" . $element . "</li>";
         }
       }
       ?>
-      <img src="../img/<?=$row["user_id"]?>.jpg" /> <br>
+      <li><img src="../img/<?=$row["user_id"]?>.jpg" /></li>
       <?php
     }
+    ?>
+    </ul
+    <?php
   }
   include('view/index.php');
