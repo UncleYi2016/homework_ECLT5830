@@ -21,7 +21,7 @@
         }
       }
       ?>
-      <li><img src="../img/<?=$row["user_id"]?>.jpg" /></li>
+      <li class="user" id="image"><img src="../img/<?=$row["user_id"]?>.jpg" /></li>
       <?php
     }
     ?>
