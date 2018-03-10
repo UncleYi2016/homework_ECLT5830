@@ -2,8 +2,12 @@
   Place your CSS here
 */
 @media screen and (min-width: 641px){
-  .user#li{float: left; width: 40%}
+  .user li{
+    float: left; width: 40%
+  }
 }
 @media screen and (max-width: 640px){
-  .user#image{ width:100%; height: auto}
+  .user #image{
+    width:100%; height: auto
+  }
 }
