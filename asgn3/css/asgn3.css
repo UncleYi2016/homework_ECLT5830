@@ -2,7 +2,7 @@
   Place your CSS here
 */
 @media screen and (min-width: 640px){
-  li{float: left; width: 40%}
+  /* li{float: left; width: 40%} */
   #user_id{visibility: hidden}
 }
 @media screen and (max-width: 640px){

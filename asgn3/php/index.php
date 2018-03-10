@@ -17,7 +17,7 @@
     while($row = $result->fetch_assoc()){
       foreach($row as $name => $element){
         if($name != "pass"){
-          echo "<li id='". $name ."'>" . $element . "</li>";
+          echo "<li style='float: left; width: 40%' id='". $name ."'>" . $element . "</li>";
         }
       }
       ?>
