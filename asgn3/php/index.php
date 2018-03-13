@@ -12,9 +12,12 @@
   $result = $db->query($sql);
   if($result->num_rows > 0){
     ?>
-    <ul class="user" >
     <?php
     while($row = $result->fetch_assoc()){
+    ?>
+    <div class="user" border=1px>
+    <ul class="user">
+    <?php
       foreach($row as $name => $element){
         if($name != "pass"){
           echo "<li style='float: left; width: 40%' id='". $name ."'>" . $element . "</li>";
@@ -25,7 +28,8 @@
       <?php
     }
     ?>
-    </ul
+    </ul>
+   </div>
     <?php
   }
   include('view/index.php');
