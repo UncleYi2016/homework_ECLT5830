@@ -27,7 +27,7 @@
   }
   ?>
   <div id="img_div">
-  <img id="img_image" src="../img/1.jpg" />
+  <img id="img_image" src="../img/2.jpg" />
   </div>
   
   </html>
