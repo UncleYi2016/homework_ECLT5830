@@ -8,6 +8,7 @@
   // No special application logic for home page (at least for assignment #3)
   // except to include lib/init.php to initialize some constant
 
+  include('view/index.php');
   $sql = "SELECT * FROM `users`";
   $result = $db->query($sql);
   if($result->num_rows > 0){
@@ -32,6 +33,5 @@
     <img src="../img/2.jpg" />
     <?php
   }
-  include('view/index.php');
   ?>
   </html>
