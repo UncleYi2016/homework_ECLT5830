@@ -26,5 +26,8 @@
     }
   }
   ?>
-  <img id="img" src="../img/1.jpg" />
+  <div id="img_div">
+  <img id="img_image" src="../img/1.jpg" />
+  </div>
+  
   </html>

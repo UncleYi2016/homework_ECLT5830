@@ -7,4 +7,6 @@
   .user img{width:100px;position:fixed; bottom:0; right:0;}
 }
 @media screen and (max-width: 640px){
+  #img_div {width:100%;}
+  #img_image {width:100%}
 }
