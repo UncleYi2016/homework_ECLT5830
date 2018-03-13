@@ -15,7 +15,7 @@
     <?php
     while($row = $result->fetch_assoc()){
     ?>
-    <div class="user" border=1px>
+    <div class="user">
     <ul class="user">
     <?php
       foreach($row as $name => $element){
