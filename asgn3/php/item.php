@@ -33,7 +33,7 @@
           <?php
           while ($row_comment = $result_comment->fetch_assoc()){
           ?>
-            <li><?=$row_comment?></li>
+            <li><?=$row_comment["msg"]?></li>
           <?php
           }
           ?>
