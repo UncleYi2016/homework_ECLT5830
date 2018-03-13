@@ -24,10 +24,10 @@
     <ul>
       <li>ID : <?=$row["item_id"]?></li>
       <li>Title : <?=$row["title"]?></li>
-      <li>Discription : <?=$row["discription"]?></li>
+      <li>Description : <?=$row["description"]?></li>
       <li>Price : <?=$row["price"]?></li>
-      <li>Add on : <?=$row["add_on"]?></li>
-      <li><img src='../img/<?=$row["item_id"]?>' /> </li>
+      <li>Add on : <?=$row["added_on"]?></li>
+      <li><img src='../img/<?=$row["img"]?>' /> </li>
       <h4>Comments : </h4>
         <ol>
           <?php
