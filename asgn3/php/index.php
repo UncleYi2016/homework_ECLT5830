@@ -25,11 +25,11 @@
       }
       ?>
       <li id="image"><img src="../img/<?=$row["user_id"]?>.jpg" /></li>
+      </ul>
+      </div>
       <?php
     }
     ?>
-    </ul>
-   </div>
     <?php
   }
   include('view/index.php');
