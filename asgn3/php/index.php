@@ -18,20 +18,11 @@
     ?>
     <div class="user">
     <ul class="user">
-    <?php
-      foreach($row as $name => $element){
-        if($name != "pass"){
-          echo "<li style='float: left; width: 40%' id='". $name ."'>" . $element . "</li>";
-        }
-      }
-      ?>
-      </ul>
-      </div>
-      <?php
-    }
-    ?>
+    <li id="user_name"><?$row["first_name"]?> <?$row["last_name"]?> </li>
+    <li id="user_id"><?$row["user_id"]?></li>
     <img src="../img/2.jpg" />
     <?php
+    }
   }
   ?>
   </html>
