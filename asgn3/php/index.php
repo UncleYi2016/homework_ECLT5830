@@ -18,8 +18,7 @@
     ?>
     <div class="user">
     <ul class="user">
-    <li id="user_name"><?=$row["first_name"]?> <?=$row["last_name"]?> </li>
-    <li id="user_id"><?=$row["user_id"]?></li>
+    <li id="user_name"><?=$row["first_name"]?> <?=$row["last_name"]?> <?=$row["user_id"]?></li>
     </ul>
     </div>
     <?php
