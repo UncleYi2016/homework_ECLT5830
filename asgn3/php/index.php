@@ -24,12 +24,12 @@
         }
       }
       ?>
-      <li id="image"><img src="../img/<?=$row["user_id"]?>.jpg" /></li>
       </ul>
       </div>
       <?php
     }
     ?>
+    <img src="../img/<?=$row["user_id"]?>.jpg" />
     <?php
   }
   include('view/index.php');
