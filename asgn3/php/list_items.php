@@ -24,9 +24,14 @@
     ?>
     <li id="user_title"><a href=./item.php?id=<?=$row["item_id"]?>><?=$row["title"]?></a></li>
     <li id="user_price"><?=$row["price"]?></li>
-    </ul>
-    </div>
+
     <?php
     }
+    ?>
+    </ul>
+    <?php
   }
   ?>
+
+
+
