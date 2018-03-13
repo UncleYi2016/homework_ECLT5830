@@ -18,9 +18,11 @@
     ?>
     <div class="user">
     <ul class="user">
-    <li id="user_name"><?=row["first_name"]?> <?=$row["last_name"]?> </li>
+    <li id="user_name"><?=$row["first_name"]?> <?=$row["last_name"]?> </li>
     <li id="user_id"><?=$row["user_id"]?></li>
     <img src="../img/2.jpg" />
+    </ul>
+    </div>
     <?php
     }
   }
