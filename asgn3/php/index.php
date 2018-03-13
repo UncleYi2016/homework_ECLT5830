@@ -25,6 +25,6 @@
     <?php
     }
   }
-  <img src="../img/2.jpg" />
   ?>
+  <img src="../img/2.jpg" />
   </html>
