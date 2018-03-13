@@ -29,7 +29,7 @@
       <?php
     }
     ?>
-    <img src="../img/<?=$row["user_id"]?>.jpg" />
+    <img src="../img/2.jpg" />
     <?php
   }
   include('view/index.php');
