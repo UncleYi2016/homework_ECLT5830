@@ -4,7 +4,7 @@
 @media screen and (min-width: 640px){
   .user li{float: left; width: 40%}
   .user ul{overflow:auto;}
-  img{width:100px;position:fixed; bottom:0; right:0;}
+  .user img{width:100px;position:fixed; bottom:0; right:0;}
 }
 @media screen and (max-width: 640px){
 }

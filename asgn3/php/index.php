@@ -20,11 +20,11 @@
     <ul class="user">
     <li id="user_name"><?=$row["first_name"]?> <?=$row["last_name"]?> </li>
     <li id="user_id"><?=$row["user_id"]?></li>
+    <img id="user_img" src="../img/<?=$row["user_id"]?>.jpg" />
     </ul>
     </div>
     <?php
     }
   }
   ?>
-  <img src="../img/2.jpg" />
   </html>
