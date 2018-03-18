@@ -2,10 +2,11 @@
   Place your CSS here
 */
 @media screen and (min-width: 640px){
-  .user td{width: 10%; text-align:center;border:1px}
+  .user td{width: 10%; text-align:center}
   #img_image{width:100px;position:fixed; bottom:0; right:0;}
 }
 @media screen and (max-width: 640px){
+  .user td{width: 10%; text-align:center}
   #img_div {width:100%;}
   #img_image {width:100%;}
   #user_id{visibility: hidden;}
