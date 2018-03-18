@@ -20,11 +20,11 @@
     <td id="user_name"><?=$row["first_name"]?> <?=$row["last_name"]?></td>
     <td id="user_id"><?=$row["user_id"]?></td>
     </tr>
-    </table>
     <?php
     }
   }
   ?>
+  </table>
   <div id="img_div">
   <img id="img_image" src="../img/2.jpg" />
   </div>
