@@ -17,8 +17,8 @@
     while($row = $result->fetch_assoc()){
     ?>
     <tr>
-    <td id="user_name"><?=$row["first_name"]?> <?=$row["last_name"]?></li>
-    <td id="user_id"><?=$row["user_id"]?></li>
+    <td id="user_name"><?=$row["first_name"]?> <?=$row["last_name"]?></td>
+    <td id="user_id"><?=$row["user_id"]?></td>
     </tr>
     </table>
     <?php
