@@ -8,7 +8,6 @@
   @import url("../css/asgn3.css");
 </style>
 <?php
-include('view/index.php');
   $sql = "SELECT * FROM `users`";
   $result = $db->query($sql);
   if($result->num_rows > 0){
