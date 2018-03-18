@@ -1,8 +1,4 @@
-<?php
-  $view_title = 'ECLT 5830 Asgn3';
-  include_once('top.php');
- ?>
- 
+
 <html>
 <style type="text/css">
   @import url("../css/asgn3.css");
