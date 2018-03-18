@@ -12,15 +12,13 @@
   $result = $db->query($sql);
   if($result->num_rows > 0){
     ?>
+    <table class="user">
     <?php
     while($row = $result->fetch_assoc()){
     ?>
-    <div class="user">
-    <ul class="user">
-    <li id="user_name"><?=$row["first_name"]?> <?=$row["last_name"]?></li>
-    <li id="user_id"><?=$row["user_id"]?></li>
-    </ul>
-    </div>
+    <td id="user_name"><?=$row["first_name"]?> <?=$row["last_name"]?></li>
+    <td id="user_id"><?=$row["user_id"]?></li>
+    </table>
     <?php
     }
   }
