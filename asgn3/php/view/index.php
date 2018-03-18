@@ -32,14 +32,6 @@
   </html>
 
 
-<pre>
-<?php
-  // This is only a place holder
-  print_r($item);
-?>
-</pre>
-
-
 <?php
   include_once('bottom.php');
 ?>
