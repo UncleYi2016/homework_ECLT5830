@@ -16,8 +16,10 @@
     <?php
     while($row = $result->fetch_assoc()){
     ?>
+    <tr>
     <td id="user_name"><?=$row["first_name"]?> <?=$row["last_name"]?></li>
     <td id="user_id"><?=$row["user_id"]?></li>
+    </tr>
     </table>
     <?php
     }
