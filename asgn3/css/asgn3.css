@@ -2,8 +2,8 @@
   Place your CSS here
 */
 @media screen and (min-width: 640px){
-  .user {border:1px;}
-    td{text-align:center}
+  .user td{width: 10%; text-align:center;border:1px}
+    
   #img_image{width:100px;position:fixed; bottom:0; right:0;}
 }
 @media screen and (max-width: 640px){
