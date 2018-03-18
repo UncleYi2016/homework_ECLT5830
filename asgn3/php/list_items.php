@@ -12,26 +12,7 @@
 
 
 <?php include('view/list_items.php'); ?>
-<?php
-  $sql = "SELECT * FROM `items` ORDER BY `price` ASC";
-  $result = $db->query($sql);
-  $items = array();
-  if($result->num_rows > 0){
-    ?>
-    <ul class="item">
-    <?php
-    while($row = $result->fetch_assoc()){
-    ?>
-    <li id="user_title"><a href=./item.php?id=<?=$row["item_id"]?>><?=$row["title"]?></a></li>
-    <li id="user_price"><?=$row["price"]?></li>
 
-    <?php
-    }
-    ?>
-    </ul>
-    <?php
-  }
-  ?>
 
 
 
