@@ -4,7 +4,7 @@
   $s = $_GET['name'];
   $result = [];
   foreach($names as $name){
-    if(strpos($name,$s) === 0){
+    if(strpos(strtolower($name),$s) === 0){
       $result[] = $name;
     }
   }
