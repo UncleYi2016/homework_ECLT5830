@@ -1,16 +1,19 @@
 <?php
   session_start();
   require_once('data.php');
-  $s = $_GET['name'];
-  $result = [];
-  foreach($names as $name){
-    if(strpos(strtolower($name),$s) === 0){
-      $result[] = $name;
+  if(isset($_GET['name'])){
+    $s = $_GET['name'];
+    $result = [];
+    foreach($names as $name){
+      if(strpos(strtolower($name),strtolower($s)) === 0){
+        $result[] = $name;
+      }
+    }
+    foreach($result as $r){
+      echo "<li>" . $r . "</li>";
     }
   }
-  foreach($result as $r){
-    echo "<li>" . $r . "</li>";
-  }
+  
   
   // TODO: Write code here to
   // 1) Retrieve a string S sent from task2.html. Let this string be S.
