@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head><title>Task #1</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    function changeValue(name, id){
+      var v = document.getElementsByName(name)
+      document.getElementById(id).innerHTML = v[0].value
+    }
+    function changeImage(name, id){
+      var v = document.getElementsByName(name)
+      for(var i = 0; i<v.length; i++){
+        if(v[i].checked){
+          document.getElementById(id).src = "img/" + v[i].value + ".jpg"
+          break
+        }
+      }
+    }
+    function save(){
+      var title = document.getElementsByName('title')[0].value
+      var description = document.getElementsByName('description')[0].value
+      var checked = [false, false, false, false]
+      var v = document.getElementsByName("animal")
+      for(var i = 0; i<v.length; i++){
+        if(v[i].checked){
+          checked[i] = true
+        }else{
+          checked[i] = false
+        }
+      }
+      window.localStorage['title'] = title
+      window.localStorage['description'] = description
+      window.localStorage['checked'] = JSON.stringify(checked)
+    }
+    function load(){
+      if(window.localStorage['title']){
+        title = window.localStorage['title']
+        document.getElementsByName("title")[0].value = title
+        changeValue("title", "title")
+      }
+      if(window.localStorage['description']){
+        description = window.localStorage['description']
+        document.getElementsByName('description')[0].value = description
+        changeValue("description", "description")
+      }
+      if(window.localStorage['checked']){
+        checked = JSON.parse(window.localStorage['checked'])
+        var v = document.getElementsByName("animal")
+        for(var i = 0; i<checked.length; i++){
+        if(checked[i]){
+          v[i].checked = true
+        }else{
+          v[i].checked = false
+        }
+      }
+      changeImage("animal", "animal_img")
+      }
+    }
+  </script>
+</head>
+<body onload="load()">
+
+<form>
+  <div>
+    <input name="title" placeholder="Title ..." value="" onkeyup="changeValue(this.name, 'title')">
+  </div>
+
+  <div>
+    <label for="fruit">Animal choice: </label>
+    <input type="radio" name="animal" value="wolf" checked onclick="changeImage(this.name, 'animal_img')"> Wolf
+    <input type="radio" name="animal" value="lemur" onclick="changeImage(this.name, 'animal_img')"> Lemur
+    <input type="radio" name="animal" value="cat" onclick="changeImage(this.name, 'animal_img')"> Cat
+    <input type="radio" name="animal" value="raccoon" onclick="changeImage(this.name, 'animal_img')"> Raccoon
+  </div>
+
+  <div>
+    <textarea name="description" rows="6" cols="60" value=""
+      placeholder="Description ..." onkeyup="changeValue(this.name, 'description')"></textarea>
+  </div>
+
+  <div>
+    <button onclick="save()">Save</button>
+    <button type="reset">Reset</button>
+  </div>
+</form>
+<hr>
+
+<div id=output>
+  <h3 id=title>Title ...</h3>
+  <div><img id=animal_img src="img/wolf.jpg" alt="wolf"></div>
+  <div id=description>Description ...</div>
+  </div>
+
+</div>
+
+</body>
+</html>
