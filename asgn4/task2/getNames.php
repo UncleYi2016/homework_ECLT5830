@@ -8,7 +8,9 @@
       $result[] = $name;
     }
   }
-  echo $result;
+  foreach($result as $r){
+    echo $r
+  }
   
   // TODO: Write code here to
   // 1) Retrieve a string S sent from task2.html. Let this string be S.
