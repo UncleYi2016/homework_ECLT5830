@@ -9,7 +9,7 @@
     }
   }
   foreach($result as $r){
-    echo $r
+    echo $r;
   }
   
   // TODO: Write code here to
