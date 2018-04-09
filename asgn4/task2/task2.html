@@ -5,7 +5,6 @@
 <script type="text/javascript">
   function search(value){
     var searchUrl = "./getNames.php?name=" + value
-    console.log(searchUrl)
     var htmlobj = $.ajax({
         type: "GET",
         url: searchUrl,
