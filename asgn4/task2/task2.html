@@ -4,8 +4,9 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript">
   function search(value){
-    searchUrl = "./getNames.php?name=" + value
-    htmlobj = $.ajax({url:searchUrl})
+    var searchUrl = "./getNames.php?name=" + value
+    console.log(searchUrl)
+    var htmlobj = $.ajax({url:searchUrl})
     console.log(htmlobj.responseText)
   }
 </script>
