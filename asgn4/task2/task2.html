@@ -6,8 +6,14 @@
   function search(value){
     var searchUrl = "./getNames.php?name=" + value
     console.log(searchUrl)
-    var htmlobj = $.ajax({url:searchUrl})
-    console.log(htmlobj.response)
+    var htmlobj = $.ajax({
+        type: "GET",
+        url: searchUrl,
+        success: function(result){
+          console.log(result)
+        }
+      }
+    )
   }
 </script>
 <style>
