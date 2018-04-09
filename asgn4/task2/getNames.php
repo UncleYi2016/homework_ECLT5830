@@ -1,7 +1,7 @@
 <?php
   session_start();
   require_once('data.php');
-  if(isset($_GET['name']) || ($_GET['name'] == "")){
+  if(isset($_GET['name']) && ($_GET['name'] != "")){
     $s = $_GET['name'];
     $result = [];
     foreach($names as $name){
