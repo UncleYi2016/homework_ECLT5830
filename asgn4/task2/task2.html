@@ -10,7 +10,7 @@
         type: "GET",
         url: searchUrl,
         success: function(result){
-          console.log(result)
+          document.getElementById("output").innerHTML = result
         }
       }
     )
