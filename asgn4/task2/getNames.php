@@ -8,8 +8,9 @@
       $result[] = $name;
     }
   }
-  $json = json_encode($result);
-  echo $json;
+  foreach($result as $r){
+    echo "<li>" . $r . "</li>";
+  }
   
   // TODO: Write code here to
   // 1) Retrieve a string S sent from task2.html. Let this string be S.
