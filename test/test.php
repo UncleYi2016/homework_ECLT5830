@@ -1,3 +1,3 @@
 <?php
-    echo $_POST['abc'];
+    echo typeof($_POST['abc']);
 ?>
