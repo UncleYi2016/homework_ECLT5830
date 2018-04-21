@@ -1,3 +1,3 @@
 <?php
-    echo gettype($_POST['abc']);
+    echo $_GET['abc'];
 ?>
